@@ -1,0 +1,22 @@
+{
+	"name": "AR_Invoice_Get_4067",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"format": {
+				"type": "string",
+				"defaultValue": "2"
+			}
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		}
+	}
+}
