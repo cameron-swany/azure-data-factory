@@ -2,7 +2,7 @@
 	"name": "AR_Invoice_Get_4067",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServer1",
+			"referenceName": "DataSource_4067_AR_Invoice",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -16,6 +16,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation"
+			},
+			"compression": {
+				"type": "gzip"
 			}
 		}
 	}

@@ -1,0 +1,47 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy AR_Invoices",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "XmlSource",
+						"storeSettings": {
+							"type": "HttpReadSettings",
+							"requestMethod": "POST",
+							"requestBody": "{\n  \n    \"Created_Date_Begin\": \"2023-09-01T18:53:59.675Z\",\n    \"Created_Date_End\": \"2023-09-15T18:53:59.675Z\"\n  \n}",
+							"requestTimeout": ""
+						},
+						"formatSettings": {
+							"type": "XmlReadSettings",
+							"validationMode": "none",
+							"namespaces": true
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "AR_Invoice_Get_4067",
+						"type": "DatasetReference",
+						"parameters": {
+							"format": "2"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
