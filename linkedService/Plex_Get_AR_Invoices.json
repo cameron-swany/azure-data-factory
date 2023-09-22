@@ -1,0 +1,28 @@
+{
+	"name": "Plex_Get_AR_Invoices",
+	"properties": {
+		"parameters": {
+			"createdDateBegin": {
+				"type": "string",
+				"defaultValue": "2023-09-01T12:00Z"
+			}
+		},
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://connect.plex.com/accounting/v1/ar-invoices",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous",
+			"authHeaders": {
+				"X-Plex-Connect-Api-Key": {
+					"type": "AzureKeyVaultSecret",
+					"store": {
+						"referenceName": "Obt_KeyVault",
+						"type": "LinkedServiceReference"
+					},
+					"secretName": "Obt-Plex-REST"
+				}
+			}
+		}
+	}
+}
