@@ -13,6 +13,9 @@
 		},
 		"annotations": [],
 		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "https://test.connect.plex.com/accounting/v1/ar-invoices?createdDateBegin=2023-09-01T12:00Z"
+		},
 		"schema": []
 	}
 }

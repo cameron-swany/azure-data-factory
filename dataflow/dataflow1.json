@@ -15,13 +15,12 @@
 			"sinks": [],
 			"transformations": [],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
+				"source(allowSchemaDrift: false,",
 				"     validateSchema: false,",
 				"     httpMethod: 'GET',",
 				"     timeout: 30,",
-				"     requestInterval: 0,",
 				"     paginationRules: ['supportRFC5988' -> 'true'],",
-				"     responseFormat: ['type' -> 'json', 'documentForm' -> 'documentPerLine']) ~> ARInvoice"
+				"     responseFormat: ['type' -> 'json', 'documentForm' -> 'arrayOfDocuments']) ~> ARInvoice"
 			]
 		}
 	}
