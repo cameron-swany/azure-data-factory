@@ -15,43 +15,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "RestSource",
-						"httpRequestTimeout": "00:01:40",
-						"requestInterval": "00.00:00:00.010",
-						"requestMethod": "GET",
-						"paginationRules": {
-							"supportRFC5988": "true"
-						}
-					},
-					"sink": {
-						"type": "RestSink",
-						"httpRequestTimeout": "00:05:00",
-						"requestInterval": 10,
-						"requestMethod": "PUT",
-						"writeBatchSize": 10000,
-						"httpCompressionType": "none"
-					},
 					"enableStaging": false
-				},
-				"inputs": [
-					{
-						"referenceName": "Plex_REST_AR_Invoice_List",
-						"type": "DatasetReference",
-						"parameters": {
-							"createdDateBegin": "2023-09-21T12:00Z"
-						}
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "Plex_REST_AR_Invoice_List",
-						"type": "DatasetReference",
-						"parameters": {
-							"createdDateBegin": "2023-09-21T12:00Z"
-						}
-					}
-				]
+				}
 			}
 		],
 		"annotations": []
