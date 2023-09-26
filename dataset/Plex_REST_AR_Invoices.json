@@ -8,12 +8,6 @@
 				"createdDateBegin": "?createdDateBegin=2023-09-15T12:00Z"
 			}
 		},
-		"parameters": {
-			"createdDateBegin": {
-				"type": "string",
-				"defaultValue": "?createdDateBegin=2023-09-15T12:00Z"
-			}
-		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
