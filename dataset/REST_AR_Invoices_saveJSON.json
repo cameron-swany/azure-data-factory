@@ -5,13 +5,18 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@concat('Plex_REST_AR_Invoices_',pipeline().TriggerTime)",
+					"value": "@dataset().filename",
 					"type": "Expression"
 				},
 				"container": "plex-import"

@@ -5,7 +5,14 @@
 			{
 				"name": "Plex REST AR Invoice JSON Copy",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Set variable Datetime",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -309,6 +316,23 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Set variable Datetime",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "triggerDate",
+					"value": {
+						"value": "formatDateTime(utcNow(), 'dd-MM-yyyy hh:mm:ss tt')",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"variables": {
