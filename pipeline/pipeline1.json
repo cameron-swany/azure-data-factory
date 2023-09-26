@@ -29,6 +29,17 @@
 							"namespaces": true
 						}
 					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
 					"enableStaging": false
 				},
 				"inputs": [
@@ -38,6 +49,12 @@
 						"parameters": {
 							"format": "2"
 						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Plex_Ar_Invoice_REST_file",
+						"type": "DatasetReference"
 					}
 				]
 			}
