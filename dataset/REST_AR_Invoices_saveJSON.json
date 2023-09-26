@@ -10,6 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat('Plex_REST_AR_Invoices_',pipeline().TriggerTime)",
+					"type": "Expression"
+				},
 				"container": "plex-import"
 			}
 		},
