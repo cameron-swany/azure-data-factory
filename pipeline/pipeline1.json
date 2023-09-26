@@ -311,6 +311,11 @@
 				]
 			}
 		],
+		"variables": {
+			"triggerDate": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }

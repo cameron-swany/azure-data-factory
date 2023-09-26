@@ -3,10 +3,7 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Plex_REST_AR_Invoice_List",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"createdDateBegin": "?createdDateBegin=2023-09-15T12:00Z"
-			}
+			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "RestResource",
