@@ -1,6 +1,12 @@
 {
 	"name": "Plex_REST_AR_Invoice_List",
 	"properties": {
+		"parameters": {
+			"createdDateBegin": {
+				"type": "string",
+				"defaultValue": "09-15-2023T00:00Z"
+			}
+		},
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
