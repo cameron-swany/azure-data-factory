@@ -2,8 +2,14 @@
 	"name": "Plex_REST_AR_Invoice_List",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "DataSource_4067_AR_Invoice",
+			"referenceName": "Plex_HTTP_REST_AR_Invoice_List",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"createdDateBegin": {
+				"type": "string",
+				"defaultValue": "2023-09-15T12:00:00Z"
+			}
 		},
 		"annotations": [],
 		"type": "Json",
