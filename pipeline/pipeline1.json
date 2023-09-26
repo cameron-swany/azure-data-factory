@@ -25,20 +25,30 @@
 						}
 					},
 					"sink": {
-						"type": "JsonSink",
-						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						},
-						"formatSettings": {
-							"type": "JsonWriteSettings"
-						}
+						"type": "RestSink",
+						"httpRequestTimeout": "00:05:00",
+						"requestInterval": 10,
+						"writeBatchSize": 10000,
+						"httpCompressionType": "none"
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "Plex_REST_AR_Invoice_List",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"createdDateBegin": "2023-09-21T12:00Z"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Plex_REST_AR_Invoice_List",
+						"type": "DatasetReference",
+						"parameters": {
+							"createdDateBegin": "2023-09-21T12:00Z"
+						}
 					}
 				]
 			}
