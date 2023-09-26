@@ -1,0 +1,18 @@
+{
+	"name": "Plex_REST_AR_Invoices",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Plex_REST_AR_Invoice_List",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"createdDateBegin": {
+				"type": "string",
+				"defaultValue": "09-20-2023T00:00Z"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
