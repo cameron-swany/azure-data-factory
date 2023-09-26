@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "Ar_Invoice_REST_Test",
 				"container": "plex-import"
 			},
 			"columnDelimiter": ",",
