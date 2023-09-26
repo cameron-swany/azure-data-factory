@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://test.connect.plex.com/accounting/v1/ar-invoices",
+			"url": "https://connect.plex.com/accounting/v1/ar-invoices",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous",
 			"authHeaders": {
