@@ -1,6 +1,12 @@
 {
 	"name": "REST_AR_Invoice_List",
 	"properties": {
+		"parameters": {
+			"createdDateBegin": {
+				"type": "string",
+				"defaultValue": "2023-09-15T12:00Z"
+			}
+		},
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
