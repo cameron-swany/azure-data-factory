@@ -28,11 +28,10 @@
 						"type": "JsonSink",
 						"storeSettings": {
 							"type": "AzureBlobStorageWriteSettings",
-							"copyBehavior": "PreserveHierarchy"
+							"copyBehavior": "FlattenHierarchy"
 						},
 						"formatSettings": {
-							"type": "JsonWriteSettings",
-							"filePattern": "arrayOfObjects"
+							"type": "JsonWriteSettings"
 						}
 					},
 					"enableStaging": false,
@@ -295,7 +294,7 @@
 								}
 							}
 						],
-						"collectionReference": ""
+						"collectionReference": "$['lines']"
 					}
 				},
 				"inputs": [
