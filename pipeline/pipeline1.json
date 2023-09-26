@@ -39,7 +39,7 @@
 						"referenceName": "Plex_REST_AR_Invoices",
 						"type": "DatasetReference",
 						"parameters": {
-							"createdDateBegin": "09-20-2023T00:00Z"
+							"createdDateBegin": "09-24-2023T00:00Z"
 						}
 					}
 				],
