@@ -1,5 +1,5 @@
 {
-	"name": "RestResource1",
+	"name": "Plex_REST_AR_Invoice_List",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "REST_AR_Invoice_List",
