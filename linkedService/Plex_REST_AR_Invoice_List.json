@@ -3,8 +3,7 @@
 	"properties": {
 		"parameters": {
 			"createdDateBegin": {
-				"type": "string",
-				"defaultValue": "09-15-2023T00:00Z"
+				"type": "string"
 			}
 		},
 		"annotations": [],
