@@ -8,7 +8,7 @@
 		"parameters": {
 			"createdDateBegin": {
 				"type": "string",
-				"defaultValue": "2023-09-15T12:00Z"
+				"defaultValue": "2023-09-21T12:00Z"
 			}
 		},
 		"annotations": [],
