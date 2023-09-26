@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy AR Invoices",
+				"name": "Plex REST AR Invoice JSON Copy",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -20,20 +20,17 @@
 						"httpRequestTimeout": "00:01:40",
 						"requestInterval": "00.00:00:00.010",
 						"requestMethod": "GET",
-						"additionalHeaders": {
-							"Accept-Encoding": "gzip, deflate, br",
-							"Connection": "keep-alive"
+						"paginationRules": {
+							"supportRFC5988": "true"
 						}
 					},
 					"sink": {
 						"type": "JsonSink",
 						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings",
-							"copyBehavior": "FlattenHierarchy"
+							"type": "AzureBlobStorageWriteSettings"
 						},
 						"formatSettings": {
-							"type": "JsonWriteSettings",
-							"filePattern": "arrayOfObjects"
+							"type": "JsonWriteSettings"
 						}
 					},
 					"enableStaging": false
