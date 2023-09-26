@@ -307,13 +307,7 @@
 				"outputs": [
 					{
 						"referenceName": "REST_AR_Invoices_saveJSON",
-						"type": "DatasetReference",
-						"parameters": {
-							"filename": {
-								"value": "@concat('Plex_AR_Invoice_List_',formatDateTime(utcNow()),'yyyy-MM-ddTHHmmss','.json')",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}
