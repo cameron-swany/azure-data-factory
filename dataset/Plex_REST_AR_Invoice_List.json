@@ -18,7 +18,7 @@
 		"type": "RestResource",
 		"typeProperties": {
 			"relativeUrl": {
-				"value": "@https://connect.plex.com/accounting/v1/ar-invoices?dataset().createdDateBegin",
+				"value": "https://connect.plex.com/accounting/v1/ar-invoices?dataset().createdDateBegin",
 				"type": "Expression"
 			}
 		},
