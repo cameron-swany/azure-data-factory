@@ -20,7 +20,7 @@
 				"     limit: 100,",
 				"     httpMethod: 'GET',",
 				"     timeout: 30,",
-				"     responseFormat: ['type' -> 'json', 'documentForm' -> 'arrayOfDocuments']) ~> source1"
+				"     responseFormat: ['type' -> 'json', 'documentForm' -> 'singleDocument']) ~> source1"
 			]
 		}
 	}
