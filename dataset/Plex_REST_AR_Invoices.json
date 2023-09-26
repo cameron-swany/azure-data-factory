@@ -13,12 +13,6 @@
 		},
 		"annotations": [],
 		"type": "RestResource",
-		"typeProperties": {
-			"relativeUrl": {
-				"value": "@dataset().createdDateBegin",
-				"type": "Expression"
-			}
-		},
 		"schema": []
 	}
 }
