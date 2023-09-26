@@ -40,12 +40,6 @@
 						"referenceName": "Plex_REST_AR_Invoice_List",
 						"type": "DatasetReference"
 					}
-				],
-				"outputs": [
-					{
-						"referenceName": "AR_Invoice_JSON_Export",
-						"type": "DatasetReference"
-					}
 				]
 			}
 		],
