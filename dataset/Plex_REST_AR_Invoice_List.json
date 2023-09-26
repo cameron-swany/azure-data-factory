@@ -3,7 +3,10 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "REST_AR_Invoice_List",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"createdDateBegin": "2023-09-20T12:00Z"
+			}
 		},
 		"annotations": [],
 		"type": "RestResource",
