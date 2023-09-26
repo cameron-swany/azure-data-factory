@@ -17,7 +17,10 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "https://connect.plex.com/accounting/v1/ar-invoices?createdDateBegin=2023-09-15T12:00Z"
+			"relativeUrl": {
+				"value": "@dataset().createdDateBegin",
+				"type": "Expression"
+			}
 		},
 		"schema": []
 	}
