@@ -40,7 +40,17 @@
 							"fileExtension": ".txt"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['Column_1']"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
